@@ -1,0 +1,22 @@
+body{
+    background-color: #eeeeee;
+    font-family: 'Raleway', sans-serif;
+}
+
+body > .container{
+    padding-top: 110px;
+}
+
+#portrait{
+    max-width: 175px;
+    border: solid 10px #eeeeee;
+    margin-top: -110px;
+}
+
+.progress{
+    height: 20px;
+}
+
+.badge{
+    font-size: 85%;
+}

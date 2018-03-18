@@ -1,0 +1,55 @@
+.timeline {
+    position: relative;
+}
+.timeline::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: grey;
+    left: 0;
+    margin-left: -1.5px;
+}
+
+.timeline .timeline-item {
+    position: relative;
+}
+
+.timeline .timeline-item::before, .timeline .timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border: solid 3px grey;
+    border-radius: 50%;
+    background-color: grey;
+    left: 0;
+    top: .5rem;
+    margin-left: -.5rem;
+}
+
+.timeline .timeline-item span::before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border: solid 3px grey;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    bottom: 60%;
+    margin-left: -.5rem;
+}
+
+.timeline .timeline-item span::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: solid 3px grey;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    margin-left: -1rem;
+}
